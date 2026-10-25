@@ -1,0 +1,47 @@
+/* VELORA — ratings & reviews */
+.rv { max-width: 820px; }
+.rv h3 { margin: 0 0 12px; }
+.rv-muted { color: #aaa; font-size: 14px; line-height: 1.6; }
+.rv-stars { display: inline-flex; letter-spacing: 2px; color: #3b3b3b; line-height: 1; }
+.rv-stars .on { color: #c9a96e; }
+.rv-stars .half { background: linear-gradient(90deg, #c9a96e 50%, #3b3b3b 50%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.rv-summary { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; border: 1px solid #2a2a2a; border-radius: 18px; padding: 22px; background: #101010; margin-bottom: 20px; }
+.rv-score { display: flex; flex-direction: column; align-items: center; gap: 6px; min-width: 130px; }
+.rv-score strong { font-size: 48px; line-height: 1; color: #fff; }
+.rv-score span:last-child { color: #aaa; font-size: 13px; }
+.rv-bars { flex: 1; min-width: 220px; display: flex; flex-direction: column; gap: 7px; }
+.rv-bar-row { display: grid; grid-template-columns: 34px 1fr 28px; gap: 10px; align-items: center; font-size: 13px; color: #bbb; }
+.rv-bar { height: 8px; background: #262626; border-radius: 8px; overflow: hidden; }
+.rv-bar i { display: block; height: 100%; background: #c9a96e; border-radius: 8px; }
+.rv-bar-count { text-align: right; }
+.rv-form-card { border: 1px solid #2a2a2a; border-radius: 18px; padding: 22px; margin-bottom: 26px; }
+.rv-form-card label { display: block; margin: 14px 0 6px; font-size: 13px; color: #c9a96e; }
+.rv-form-card input, .rv-form-card textarea { width: 100%; box-sizing: border-box; background: #0d0d0d; border: 1px solid #333; border-radius: 12px; padding: 11px 14px; color: #fff; font: inherit; font-size: 14px; }
+.rv-form-card input:focus, .rv-form-card textarea:focus { outline: none; border-color: #c9a96e; }
+.rv-form-card textarea { resize: vertical; }
+.rv-form-card .btn-primary { margin-top: 10px; cursor: pointer; }
+.rv-count { text-align: right; font-size: 12px; color: #777; margin: 4px 0 0; }
+.rv-picker { display: flex; align-items: center; gap: 14px; margin-top: 10px; }
+.rv-picker button { background: none; border: 0; font-size: 30px; line-height: 1; color: #3b3b3b; cursor: pointer; padding: 2px 3px; }
+.rv-picker button.on { color: #c9a96e; }
+.rv-picker button:focus-visible { outline: 2px solid #c9a96e; border-radius: 6px; }
+.rv-picker-label { font-size: 14px; color: #ddd; }
+.rv-error { color: #f1a29a; font-size: 13px; margin: 6px 0 0; }
+.rv-ok { color: #8bd5a3; font-size: 13px; margin: 6px 0 0; }
+.rv-list-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 10px; }
+.rv-list-head h3 { margin: 0; }
+.rv-list-head select { background: #0d0d0d; color: #fff; border: 1px solid #333; border-radius: 20px; padding: 7px 14px; font: inherit; font-size: 13px; }
+.rv-empty { border: 1px dashed #444; border-radius: 16px; padding: 28px 18px; text-align: center; color: #aaa; }
+.rv-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+.rv-item { border: 1px solid #2a2a2a; border-radius: 16px; padding: 18px; background: #101010; }
+.rv-item-top { display: flex; gap: 12px; align-items: center; }
+.rv-avatar { width: 40px; height: 40px; border-radius: 50%; background: #c9a96e; color: #111; display: flex; align-items: center; justify-content: center; font-weight: 600; }
+.rv-you { margin-left: 8px; font-size: 11px; border: 1px solid #c9a96e; color: #c9a96e; border-radius: 10px; padding: 1px 8px; }
+.rv-meta { display: flex; gap: 10px; align-items: center; font-size: 12px; color: #888; margin-top: 3px; }
+.rv-item h4 { margin: 12px 0 4px; font-size: 15px; }
+.rv-item p { margin: 8px 0 0; color: #ccc; line-height: 1.6; font-size: 14px; white-space: pre-wrap; word-break: break-word; }
+.rv-delete { margin-top: 10px; background: none; border: 1px solid #c4574c; color: #f1a29a; border-radius: 20px; padding: 6px 14px; font: inherit; font-size: 12px; cursor: pointer; }
+.rv-delete:hover { background: #c4574c; color: #fff; }
+.rv-note { margin-top: 16px; font-size: 12px; color: #777; }
+@media (max-width: 560px) { .rv-summary { gap: 18px; padding: 16px; } .rv-picker button { font-size: 34px; } }
+.rv-sample { margin-left: 8px; font-size: 11px; border: 1px solid #666; color: #aaa; border-radius: 10px; padding: 1px 8px; }

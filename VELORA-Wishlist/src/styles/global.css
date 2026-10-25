@@ -1,0 +1,2284 @@
+/* =====================================================
+   GENERAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+
+    background: #0b0b0d;
+
+    color: white;
+}
+
+
+a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+button {
+    font-family: inherit;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+
+    height: 80px;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 1000;
+
+    background: rgba(11, 11, 13, 0.92);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+}
+
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+
+}
+
+
+.navbar nav {
+
+    display: flex;
+
+    gap: 32px;
+
+}
+
+
+.navbar nav a {
+
+    font-size: 14px;
+
+    color: #c8c8c8;
+
+    transition: 0.3s;
+
+}
+
+
+.navbar nav a:hover {
+
+    color: white;
+
+}
+
+
+.login-btn {
+
+    border: 1px solid white;
+
+    background: transparent;
+
+    color: white;
+
+    padding: 10px 25px;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+
+}
+
+
+.login-btn:hover {
+
+    background: white;
+
+    color: #111;
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    padding: 140px 7% 80px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 50px;
+
+}
+
+
+.small-heading {
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(55px, 7vw, 95px);
+
+    line-height: 0.95;
+
+    font-weight: 800;
+
+}
+
+
+.hero h1 span {
+
+    color: #888;
+
+}
+
+
+.hero-text {
+
+    color: #aaa;
+
+    max-width: 550px;
+
+    line-height: 1.8;
+
+    margin: 30px 0;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+.primary-btn,
+.secondary-btn {
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+
+}
+
+
+.primary-btn {
+
+    background: white;
+
+    color: #111;
+
+    border: none;
+
+}
+
+
+.primary-btn:hover {
+
+    transform: translateY(-3px);
+
+}
+
+
+.secondary-btn {
+
+    border: 1px solid #555;
+
+    background: transparent;
+
+    color: white;
+
+}
+
+
+.secondary-btn:hover {
+
+    border-color: white;
+
+}
+
+
+.hero-image {
+
+    height: 550px;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+}
+
+
+.hero-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.7s;
+
+}
+
+
+.hero-image:hover img {
+
+    transform: scale(1.05);
+
+}
+/* =====================================================
+   VELORA BRAND SECTION
+===================================================== */
+
+.brands-section {
+    width: 100%;
+    padding: 90px 7%;
+    background: #111113;
+}
+
+
+/* SECTION HEADING */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-heading > p:first-child {
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #999999;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    color: #ffffff;
+    margin: 0 0 15px;
+}
+
+.section-heading h2 span {
+    color: #c9a96e;
+}
+
+.section-description {
+    color: #888888;
+    font-size: 16px;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+/* CAR GRID */
+
+.car-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    width: 100%;
+}
+
+
+/* CAR CARD */
+
+.car-card {
+    background: #18181b;
+
+    border: 1px solid #333333;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    transition: 0.35s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #777777;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+/* LOGO AREA */
+
+.logo-image {
+    height: 220px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ffffff;
+
+    padding: 40px;
+}
+
+
+/* LOGO */
+
+.logo-image img {
+    width: 150px;
+
+    height: 150px;
+
+    object-fit: contain;
+
+    display: block;
+
+    transition: 0.4s ease;
+}
+
+
+/* LOGO HOVER */
+
+.car-card:hover .logo-image img {
+    transform: scale(1.08);
+}
+
+
+/* CARD INFORMATION */
+
+.car-info {
+    padding: 25px;
+}
+
+.brand-category {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #999999;
+
+    margin-bottom: 10px;
+}
+
+.car-info h3 {
+    color: #ffffff;
+
+    font-size: 25px;
+
+    margin: 0 0 12px;
+}
+
+.car-info > p:not(.brand-category) {
+    color: #8f8f8f;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    min-height: 45px;
+
+    margin-bottom: 20px;
+}
+
+
+/* BUTTON */
+
+.car-info button {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    background: transparent;
+
+    border: 1px solid #444444;
+
+    border-radius: 8px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.car-info button:hover {
+    background: #ffffff;
+
+    color: #111111;
+
+    border-color: #ffffff;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .car-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .brands-section {
+        padding: 70px 5%;
+    }
+
+    .car-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-heading h2 {
+        font-size: 35px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .brands-section {
+        padding: 60px 20px;
+    }
+
+    .car-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .logo-image {
+        height: 200px;
+    }
+
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-section {
+
+    padding: 120px 7%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+}
+
+
+.about-content h2 {
+
+    font-size: 55px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+
+}
+
+
+.about-content h2 span {
+
+    color: #777;
+
+}
+
+
+.about-content > p:last-child {
+
+    color: #888;
+
+    max-width: 550px;
+
+    line-height: 1.8;
+
+}
+
+
+.features {
+
+    display: grid;
+
+    gap: 20px;
+
+}
+
+
+.feature {
+
+    padding: 25px;
+
+    background: #151517;
+
+    border-radius: 15px;
+
+    border: 1px solid #242426;
+
+}
+
+
+.feature-icon {
+
+    font-size: 30px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.feature h3 {
+
+    margin-bottom: 5px;
+
+}
+
+
+.feature p {
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+.faq-section {
+
+    padding: 110px 7%;
+
+    background: #101012;
+
+}
+
+
+.faq-container {
+
+    max-width: 850px;
+
+    margin: auto;
+
+}
+
+
+.faq-item {
+
+    border-bottom: 1px solid #333;
+
+}
+
+
+.faq-question {
+
+    width: 100%;
+
+    padding: 22px 5px;
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 16px;
+
+    text-align: left;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.faq-question span {
+
+    font-size: 25px;
+
+    color: #aaa;
+
+}
+
+
+.faq-answer {
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: 0.4s ease;
+
+}
+
+
+.faq-answer p {
+
+    color: #888;
+
+    line-height: 1.8;
+
+    padding: 0 5px 20px;
+
+    font-size: 14px;
+
+}
+
+
+.faq-item.active .faq-answer {
+
+    max-height: 200px;
+
+}
+
+
+/* =====================================================
+   ASK QUESTION
+===================================================== */
+
+.question-section {
+
+    padding: 110px 7%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.question-content h2 {
+
+    font-size: 50px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.question-content > p:last-child {
+
+    color: #888;
+
+    max-width: 500px;
+
+    line-height: 1.8;
+
+}
+
+
+.question-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.question-form input,
+.question-form textarea {
+
+    width: 100%;
+
+    padding: 15px;
+
+    background: #151517;
+
+    border: 1px solid #333;
+
+    border-radius: 8px;
+
+    color: white;
+
+    font-family: inherit;
+
+    outline: none;
+
+}
+
+
+.question-form input:focus,
+.question-form textarea:focus {
+
+    border-color: white;
+
+}
+
+
+.question-form textarea {
+
+    resize: vertical;
+
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact-section {
+
+    padding: 110px 7%;
+
+    background: #151517;
+
+}
+
+
+.contact-container {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.contact-info h2 {
+
+    font-size: 50px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.contact-info > p:last-child {
+
+    color: #888;
+
+    line-height: 1.8;
+
+    max-width: 500px;
+
+}
+
+
+.contact-details {
+
+    display: grid;
+
+    gap: 18px;
+
+}
+
+
+.contact-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 22px;
+
+    background: #101012;
+
+    border: 1px solid #292929;
+
+    border-radius: 12px;
+
+}
+
+
+.contact-icon {
+
+    font-size: 25px;
+
+}
+
+
+.contact-box h3 {
+
+    margin-bottom: 4px;
+
+}
+
+
+.contact-box p {
+
+    color: #888;
+
+}
+
+
+/* =====================================================
+   POLICIES
+===================================================== */
+
+.policies-section {
+
+    padding: 110px 7%;
+
+}
+
+
+.policies-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.policy-card {
+
+    background: #151517;
+
+    border: 1px solid #292929;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+}
+
+
+.policy-card h3 {
+
+    margin-bottom: 15px;
+
+}
+
+
+.policy-card p {
+
+    color: #888;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    padding: 35px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-top: 1px solid #222;
+
+}
+
+
+.footer-logo {
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+.footer-links a {
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+.footer-links a:hover {
+
+    color: white;
+
+}
+
+
+footer > p {
+
+    color: #666;
+
+    font-size: 12px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 1100px) {
+
+
+    .car-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .policies-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .hero {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .question-section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .contact-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+
+    .navbar {
+
+        padding: 0 5%;
+
+    }
+
+
+    .navbar nav {
+
+        display: none;
+
+    }
+
+
+    .logo {
+
+        font-size: 23px;
+
+    }
+
+
+    .hero {
+
+        padding: 120px 5% 60px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 55px;
+
+    }
+
+
+    .hero-image {
+
+        height: 300px;
+
+    }
+
+
+    .brands-section,
+    .faq-section,
+    .policies-section {
+
+        padding: 80px 5%;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .car-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .about-section {
+
+        padding: 80px 5%;
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .about-content h2 {
+
+        font-size: 45px;
+
+    }
+
+
+    .policies-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .question-section {
+
+        padding: 80px 5%;
+
+    }
+
+
+    .question-content h2 {
+
+        font-size: 40px;
+
+    }
+
+
+    .contact-section {
+
+        padding: 80px 5%;
+
+    }
+
+
+    .contact-info h2 {
+
+        font-size: 40px;
+
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 18px;
+
+        text-align: center;
+
+    }
+
+
+    .footer-links {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+}
+/* =====================================================
+   CAR COMPANY SEARCH BAR
+===================================================== */
+
+.search-box {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    margin: 35px auto 0;
+
+    display: flex;
+
+    background: #ffffff;
+
+    border-radius: 50px;
+
+    padding: 6px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   SEARCH INPUT
+===================================================== */
+/* =====================================================
+   PREMIUM SEARCH TEXT
+===================================================== */
+
+.search-box input {
+
+    flex: 1;
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    padding: 15px 28px;
+
+    border-radius: 50px;
+
+    color: #222222;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    box-sizing: border-box;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =====================================================
+   SEARCH PLACEHOLDER
+===================================================== */
+
+.search-box input::placeholder {
+
+    color: #888888;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+/* =====================================================
+   TEXT WHILE USER IS SEARCHING
+===================================================== */
+
+.search-box input:focus {
+
+    color: #a27c3f;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.2px;
+
+}
+
+
+.search-box button {
+
+    display: none;
+
+}
+
+
+/* =====================================================
+   SEARCH RESULT MESSAGE
+===================================================== */
+
+.no-results {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 18px;
+
+    padding: 50px 20px;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 550px) {
+
+    .search-box {
+
+        width: 90%;
+
+        margin: 25px auto 0;
+
+        padding: 5px;
+
+    }
+
+
+    .search-box input {
+
+        padding: 14px 20px;
+
+        font-size: 14px;
+
+    }
+
+
+    .search-box input::placeholder {
+
+        font-size: 13px;
+
+    }
+
+}
+/* =====================================================
+   VELORA LOGIN POPUP - COMPLETE
+===================================================== */
+
+
+/* -----------------------------------------------------
+   DARK OVERLAY
+----------------------------------------------------- */
+
+.login-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.80);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    z-index: 99999;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition: opacity 0.3s ease,
+                visibility 0.3s ease;
+}
+
+
+/* OPEN */
+
+.login-overlay.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+}
+
+
+/* -----------------------------------------------------
+   MAIN POPUP
+----------------------------------------------------- */
+
+.login-box {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 1050px;
+
+    max-height: 90vh;
+
+    display: grid;
+
+    grid-template-columns: 40% 60%;
+
+    background: #18181b;
+
+    border: 1px solid #333;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 30px 100px rgba(0, 0, 0, 0.7);
+
+    transform: translateY(30px) scale(0.96);
+
+    transition: transform 0.3s ease;
+}
+
+
+/* POPUP ANIMATION */
+
+.login-overlay.active .login-box {
+
+    transform: translateY(0) scale(1);
+}
+
+
+/* -----------------------------------------------------
+   CLOSE BUTTON
+----------------------------------------------------- */
+
+.login-close {
+
+    position: absolute;
+
+    top: 14px;
+
+    right: 16px;
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    color: #ffffff;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    z-index: 100;
+
+    transition: all 0.3s ease;
+}
+
+
+.login-close:hover {
+
+    background: #c9a96e;
+
+    color: #111111;
+
+    transform: rotate(90deg);
+}
+
+
+/* =====================================================
+   LEFT SIDE
+===================================================== */
+
+.login-intro {
+
+    padding: 55px 45px;
+
+    background: #151517;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.login-intro h2 {
+
+    color: #ffffff;
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    margin: 20px 0 15px;
+}
+
+
+.login-intro h2 span {
+
+    display: block;
+
+    color: #c9a96e;
+}
+
+
+.login-intro > p {
+
+    color: #999999;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* VELORA LOGO */
+
+.velora-small-logo {
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+}
+
+
+/* BENEFITS */
+
+.login-benefits {
+
+    margin-top: 15px;
+}
+
+
+.benefit {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 13px 0;
+}
+
+
+.benefit span {
+
+    width: 25px;
+
+    height: 25px;
+
+    min-width: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #c9a96e;
+
+    color: #111111;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.benefit p {
+
+    color: #dddddd;
+
+    margin: 0;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   RIGHT SIDE
+===================================================== */
+.login-form-area {
+    padding: 45px;
+    background: #1b1b1e;
+
+    overflow-y: auto;
+
+    max-height: 90vh;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   LOGIN TABS
+===================================================== */
+
+.login-tabs {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 5px;
+
+    background: #111113;
+
+    padding: 5px;
+
+    border-radius: 10px;
+
+    margin-bottom: 30px;
+}
+
+
+.login-tab {
+
+    width: 100%;
+
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 13px 10px;
+
+    background: transparent;
+
+    color: #888888;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.login-tab:hover {
+
+    color: #ffffff;
+}
+
+
+.login-tab.active {
+
+    background: #c9a96e;
+
+    color: #111111;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   FORM HEADING
+===================================================== */
+
+.account-form h3 {
+
+    color: #ffffff;
+
+    font-size: 27px;
+
+    margin: 0 0 8px;
+}
+
+
+.form-subtitle {
+
+    color: #888888;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin: 0 0 25px;
+}
+
+
+/* =====================================================
+   FORM SECTION TITLES
+===================================================== */
+
+.form-section-title {
+
+    color: #c9a96e;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    padding-bottom: 9px;
+
+    margin: 25px 0 18px;
+
+    border-bottom: 1px solid #333;
+}
+
+
+/* =====================================================
+   FORM GROUP
+===================================================== */
+
+.form-group {
+
+    margin-bottom: 17px;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    color: #dddddd;
+
+    font-size: 12px;
+
+    margin-bottom: 7px;
+}
+
+
+/* =====================================================
+   INPUTS
+===================================================== */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px 14px;
+
+    background: #111113;
+
+    color: #ffffff;
+
+    border: 1px solid #3a3a3d;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    transition: border 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color: #666666;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color: #c9a96e;
+
+    box-shadow:
+        0 0 0 2px rgba(201, 169, 110, 0.10);
+}
+
+
+.form-group textarea {
+
+    resize: vertical;
+
+    min-height: 80px;
+}
+
+
+.form-group select {
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   TWO COLUMN FORM
+===================================================== */
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px;
+}
+
+
+/* =====================================================
+   PASSWORD
+===================================================== */
+
+.password-field {
+
+    position: relative;
+}
+
+
+.password-field input {
+
+    padding-right: 60px;
+}
+
+
+.show-password {
+
+    position: absolute;
+
+    right: 10px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    color: #c9a96e;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+.show-password:hover {
+
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   SMALL TEXT
+===================================================== */
+
+.form-group small {
+
+    display: block;
+
+    color: #666666;
+
+    font-size: 10px;
+
+    margin-top: 5px;
+}
+
+
+/* =====================================================
+   LOGIN OPTIONS
+===================================================== */
+
+.login-options {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin: 5px 0 22px;
+
+    font-size: 12px;
+}
+
+
+.remember-me {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #888888;
+
+    cursor: pointer;
+}
+
+
+.remember-me input {
+
+    accent-color: #c9a96e;
+
+    cursor: pointer;
+}
+
+
+.login-options a {
+
+    color: #c9a96e;
+
+    text-decoration: none;
+}
+
+
+.login-options a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   TERMS
+===================================================== */
+
+.terms-checkbox {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    color: #777777;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    margin: 18px 0;
+}
+
+
+.terms-checkbox input {
+
+    margin-top: 3px;
+
+    accent-color: #c9a96e;
+}
+
+
+.terms-checkbox a {
+
+    color: #c9a96e;
+
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   MAIN BUTTON
+===================================================== */
+
+.account-button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #c9a96e;
+
+    color: #111111;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.account-button:hover {
+
+    background: #ffffff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   SWITCH ACCOUNT
+===================================================== */
+
+.switch-account {
+
+    text-align: center;
+
+    color: #777777;
+
+    font-size: 12px;
+
+    margin-top: 18px;
+}
+
+
+.switch-account a {
+
+    color: #c9a96e;
+
+    text-decoration: none;
+
+    font-weight: 500;
+}
+
+
+.switch-account a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+@media (max-width: 850px) {
+
+    .login-box {
+
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+
+        max-height: 94vh;
+
+        overflow: hidden;
+    }
+
+
+    .login-intro {
+
+        padding: 35px 30px;
+    }
+
+
+    .login-form-area {
+
+        padding: 30px;
+
+        max-height: 65vh;
+
+        overflow-y: auto;
+    }
+
+}
+
+
+
+@media (max-width: 500px) {
+
+    .login-overlay {
+
+        padding: 10px;
+    }
+
+
+    .login-box {
+
+        border-radius: 14px;
+    }
+
+
+    .login-intro {
+
+        padding: 30px 22px;
+    }
+
+
+    .login-form-area {
+
+        padding: 25px 20px;
+    }
+
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    .login-options {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+}
+/* =====================================================
+   PREVENT MAIN PAGE FROM SCROLLING WHEN LOGIN IS OPEN
+===================================================== */
+
+body.login-open {
+    overflow: hidden;
+}
+
+/* =====================================================
+   LOGGED-IN NAVBAR (user initials + dropdown)
+   Added for the auth.js session system.
+===================================================== */
+
+.login-btn.user-avatar {
+
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid #c9a96e;
+    background: rgba(201, 169, 110, 0.15);
+    color: #c9a96e;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0;
+
+}
+
+.login-btn.user-avatar:hover {
+
+    background: #c9a96e;
+    color: #111;
+
+}
+
+.user-dropdown {
+
+    position: fixed;
+    z-index: 999;
+    min-width: 200px;
+    background: #141416;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+
+}
+
+.user-dropdown-name {
+
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 2px;
+
+}
+
+.user-dropdown-email {
+
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 14px;
+    word-break: break-all;
+
+}
+
+.user-dropdown-logout {
+
+    width: 100%;
+    padding: 9px 0;
+    border-radius: 20px;
+    border: 1px solid #555;
+    background: transparent;
+    color: white;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.user-dropdown-logout:hover {
+
+    border-color: #c9a96e;
+    color: #c9a96e;
+
+}
+/* React navigation buttons preserve the original navbar link appearance. */
+.nav-link-button {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: #c8c8c8;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav-link-button:hover { color: white; }
+.navbar nav { align-items: center; }
+
+
+/* Fallback for brands whose official logo asset has not yet been added. */
+.brand-logo-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: 92px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
