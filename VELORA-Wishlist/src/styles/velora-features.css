@@ -1,0 +1,111 @@
+.velora-feature-card:hover,
+.velora-feature-card.expanded {
+  border-color: rgba(214,179,106,.52);
+  box-shadow: 0 10px 28px rgba(0,0,0,.17);
+}
+.velora-feature-card:hover { transform: translateY(-2px); }
+.velora-feature-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 67px;
+  padding: 15px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+.velora-feature-symbol {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  border: 1px solid var(--feature-line);
+  background: rgba(214,179,106,.08);
+  color: var(--feature-gold);
+  font-size: 1rem;
+}
+.velora-feature-name {
+  flex: 1;
+  color: #eae5dc;
+  font-size: .91rem;
+  font-weight: 600;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.velora-feature-plus {
+  color: var(--feature-gold);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+.velora-feature-explanation {
+  display: none;
+  padding: 0 16px 16px 60px;
+  animation: veloraFeatureReveal .2s ease both;
+}
+.velora-feature-card.expanded .velora-feature-explanation { display: block; }
+.velora-feature-category-label {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: var(--feature-gold);
+  font-size: .67rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.velora-feature-explanation h3 {
+  color: #f4e8cd;
+  font-size: .9rem;
+  line-height: 1.35;
+  margin: 0 0 6px;
+}
+.velora-feature-explanation p {
+  color: #aaa6a0;
+  font-size: .81rem;
+  line-height: 1.65;
+  margin: 0;
+}
+.velora-feature-disclaimer {
+  margin: 20px 0 0;
+  color: #827e77;
+  font-size: .75rem;
+  line-height: 1.6;
+}
+.velora-features-empty {
+  padding: 38px 20px;
+  text-align: center;
+  border: 1px dashed rgba(214,179,106,.28);
+  border-radius: 15px;
+  background: rgba(255,255,255,.015);
+}
+.velora-features-empty > span { color: var(--feature-gold); font-size: 1.5rem; }
+.velora-features-empty h3 { margin: 12px 0 6px; color: #eee7db; }
+.velora-features-empty p { color: #99948b; margin: 0; }
+@keyframes veloraFeatureReveal {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 900px) {
+  .velora-feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .velora-features-heading { align-items: flex-start; gap: 12px; }
+  .velora-feature-count { min-width: 76px; padding: 10px; }
+  .velora-feature-count strong { font-size: 1.35rem; }
+  .velora-feature-count span { font-size: .64rem; }
+  .velora-feature-categories { gap: 7px; }
+  .velora-feature-filter { padding: 9px 10px; font-size: .76rem; }
+  .velora-feature-grid { grid-template-columns: 1fr; gap: 9px; }
+  .velora-feature-trigger { min-height: 61px; padding: 12px; }
+  .velora-feature-explanation { padding: 0 14px 15px 57px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .velora-feature-card,
+  .velora-feature-filter { transition: none; }
+  .velora-feature-explanation { animation: none; }
+}
